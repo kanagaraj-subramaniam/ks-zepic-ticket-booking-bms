@@ -17,7 +17,7 @@ function SeatsModal(props) {
         if (props.selectedSeats) {
             setSeat(props.selectedSeats);
         }
-    }, []);
+    }, [props.selectedSeats]);
 
     return (
         <div className="Modal">
