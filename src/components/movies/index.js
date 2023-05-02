@@ -19,7 +19,7 @@ function Movies() {
         window.addEventListener("scroll", listenToScroll);
         return () =>
             window.removeEventListener("scroll", listenToScroll);
-    }, []);
+    });
 
     const listenToScroll = () => {
         const winScroll = document.body.scrollTop ||
