@@ -1,0 +1,2397 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif !important;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
+  background-color: #f5f5f5 !important;
+}
+
+/* Navigation */
+
+.Navigation .Actions {
+  height: 64px;
+  background: rgb(51, 53, 69);
+}
+
+.Navigation .Actions .Logo {
+  width: 134px;
+}
+
+.Navigation .Actions .Search {
+  width: 550px;
+  height: 36px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 4px;
+  cursor: text;
+  padding-top: 4px;
+}
+
+.Navigation .Actions .Search img {
+  max-width: 13px;
+  margin-left: 12px;
+}
+
+.Navigation .Actions .Search p {
+  font-size: 14px;
+  color: rgb(153, 153, 153);
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  margin-left: 12px;
+  margin-bottom: 0px;
+}
+
+.Navigation .Actions .Location {
+  margin-right: 24px;
+}
+
+.Navigation .Actions .Location div {
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+  color: rgb(204, 204, 204);
+  cursor: pointer;
+  padding-right: 8px;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.Navigation .Actions .Location span {
+  font-size: 9px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  top: -2px;
+}
+
+.Navigation .Actions .Location div:hover {
+  color: rgb(255, 255, 255);
+}
+
+.Navigation .Actions .Menu {
+  margin-left: 24px;
+}
+
+.Navigation .Actions .Menu img {
+  cursor: pointer;
+}
+
+.Navigation .Links {
+  height: 40px;
+  background: rgb(31, 37, 51);
+}
+
+.Navigation .Links .Main a {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(204, 204, 204);
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  padding-right: 20px;
+}
+
+.Navigation .Links .Main a span {
+  font-size: 8px;
+  color: rgb(231, 54, 77);
+  font-weight: 500;
+  position: absolute;
+  right: 10px;
+  top: -6px;
+}
+
+.Navigation .Links .Main a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.Navigation .Links .Sub a {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  padding-left: 24px;
+}
+
+/* Details */
+
+.Details h2 {
+  font-size: 24px;
+  color: rgb(51, 51, 51);
+  font-weight: 700;
+  line-height: 1.17;
+  word-break: break-word;
+  margin-bottom: 12px;
+  margin-top: 64px;
+}
+
+.Details h2>span {
+  background-color: #dc3558;
+  color: #FFFFFF;
+  font-size: 14px;
+  border-radius: 2px;
+  padding: 4px;
+  margin-left: 6px;
+  font-weight: 400;
+  position: relative;
+  top: -2px;
+}
+
+.Details h5 {
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+  margin-bottom: 14px;
+  margin-top: -8px;
+}
+
+.Details .Banner {
+  margin-top: 80px;
+  max-width: 100%;
+  margin-bottom: 28px;
+}
+
+.Details img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.Details a {
+  text-decoration: none;
+}
+
+.Details .Name {
+  word-break: break-word;
+  color: rgb(34, 34, 34);
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 16px;
+  margin-top: 14px;
+}
+
+.Details .Type {
+  word-break: break-word;
+  color: rgb(102, 102, 102);
+  font-family: Roboto;
+  font-size: 16px;
+  padding-right: 16px;
+  margin-top: 4px;
+  line-height: 24px;
+}
+
+.Details .More {
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 16px;
+  color: rgb(220, 53, 88);
+  font-size: 14px;
+}
+
+.Details .Item {
+  padding: 0 16px;
+}
+
+.Details .Card {
+  margin-right: -16px;
+  margin-left: -16px;
+}
+
+/* Premiere */
+
+.Premiere {
+  height: auto;
+  width: 100%;
+  min-height: 200px;
+  background-color: rgb(43, 49, 72);
+  padding-top: 24px;
+  padding-bottom: 48px;
+  margin-top: 80px;
+}
+
+.Premiere .Logo {
+  max-width: 95%;
+  margin-bottom: -30px;
+}
+
+/* Trending */
+
+.Trending {
+  margin-bottom: -12px;
+}
+
+.Trending h2 {
+  font-size: 24px;
+  color: rgb(51, 51, 51);
+  font-weight: 700;
+  line-height: 1.17;
+  word-break: break-word;
+  margin-bottom: 28px;
+  margin-top: 64px;
+}
+
+.Trending a {
+  text-decoration: none;
+}
+
+.Trending .Card {
+  padding: 14px 45px 12px 16px;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 4px;
+  width: max-content;
+  display: inline-block;
+  margin-right: 18px;
+  margin-bottom: 18px;
+}
+
+.Trending .Card .Name {
+  margin: 0px 0px 2px;
+  color: rgb(248, 68, 100);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.Trending .Card .Type {
+  margin: 0px 0px 2px;
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+}
+
+/* Footer */
+
+.Footer {
+  background-color: rgb(51, 51, 56);
+  padding: 0px;
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  margin-top: 50px;
+  padding-bottom: 40px;
+}
+
+.Footer .Contact {
+  background-color: rgb(49, 48, 53);
+  padding: 0 24px;
+  height: 83px;
+}
+
+.Footer .Contact span {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+  margin-left: 14px;
+}
+
+.Footer .Contact span strong {
+  margin-right: 10px;
+  font-size: 17px;
+}
+
+.Footer .Support {
+  background-color: rgb(64, 64, 67);
+  padding: 0 24px;
+  height: 112px;
+}
+
+.Footer .Support a {
+  text-decoration: none;
+}
+
+.Footer .Support img {
+  width: 50px;
+  height: auto;
+}
+
+.Footer .Support .Flx div {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.Footer .Support p {
+  font-size: 11px;
+  color: rgb(198, 198, 199);
+  margin-top: 14px;
+}
+
+.Footer .Links .Title {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 25px;
+  color: rgb(165, 165, 165);
+}
+
+.Footer .Links .Items {
+  margin-top: 14px;
+}
+
+.Footer .Links .Items a {
+  font-size: 11px;
+  color: rgb(127, 127, 127);
+  text-decoration: none;
+  text-transform: none;
+  transition: color 0.25s ease-in-out 0s;
+  margin: 0px 5px 5px 0px;
+  padding-right: 5px;
+  border-right: 1px solid rgb(127, 127, 127);
+}
+
+.Footer .Links .Items a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.Footer .Links .Items a:last-child {
+  border-right: none;
+}
+
+.Footer .Logo {
+  text-align: center;
+}
+
+.Footer .Logo .Line {
+  height: 1px;
+  background: rgb(93, 93, 95);
+  width: 100%;
+  margin-top: 85px;
+}
+
+.Footer .Logo img {
+  padding: 20px;
+  background: #333338;
+  margin-top: -36px;
+}
+
+.Footer .Social {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.Footer .Social img {
+  width: 36px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.Footer .Copyright {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.Footer .Copyright div {
+  font-size: 11px;
+  color: rgb(102, 102, 102);
+}
+
+/* Breadcrumbs */
+
+.Breadcrumbs div {
+  width: 100%;
+  height: 45px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2px;
+  margin-top: 85px;
+  padding: 9px 18px;
+}
+
+.Breadcrumbs div a {
+  text-decoration: none;
+  font-size: 12px;
+  color: rgb(170, 171, 172);
+  font-weight: 500;
+}
+
+/* Carousel */
+
+.Carousel {
+  margin-top: 15px;
+  margin-bottom: -10px;
+}
+
+.Carousel img {
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Modal */
+.Modal {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.Modal .Overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.75;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.Modal .Location {
+  width: 980px;
+  height: 228px;
+  top: 60px;
+  background-color: rgb(255, 255, 255);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  z-index: 11;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.Modal .Location h4 {
+  font-size: 14px;
+  text-align: center;
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+  margin-top: 24px;
+  margin-bottom: 18px;
+}
+
+.Modal .Location .Item {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.Modal .Location .Item>* {
+  flex: 0 0 10%;
+}
+
+.Modal .Location .Item div {
+  text-align: center;
+}
+
+.Modal .Location .Item img {
+  width: 65px;
+  height: auto;
+}
+
+.Modal .Location .Item p {
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  margin-top: 2px;
+}
+
+.Modal .Location .Item>div:hover p {
+  color: rgb(51, 51, 51);
+}
+
+.Modal .Location span {
+  font-size: 14px;
+  color: rgb(220, 53, 88);
+  cursor: pointer;
+}
+
+.Modal .Account {
+  width: 428px;
+  height: 508px;
+  top: 60px;
+  background-color: rgb(255, 255, 255);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  z-index: 11;
+  border-radius: 10px;
+  padding: 24px 42px;
+}
+
+.Modal .Account img {
+  cursor: pointer;
+}
+
+.Modal .Account h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: rgb(51, 51, 51);
+  margin-bottom: 36px;
+  position: relative;
+}
+
+.Modal .Account h4 img {
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+}
+
+.Modal .Account .Social {
+  width: 100%;
+  padding: 13px 0px;
+  height: 45px;
+  font-size: 14px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+  color: rgb(89, 89, 89);
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(153, 153, 153);
+  transition: background 0.5s ease-out 0s;
+  cursor: pointer;
+  margin-top: 24px;
+  position: relative;
+}
+
+.Modal .Account .Social:hover {
+  transition: background 0.5s ease-out 0s;
+  background: rgb(242, 242, 242);
+  border: 1px solid rgb(235, 235, 235);
+}
+
+.Modal .Account .Social img {
+  position: absolute;
+  float: left;
+  left: 20px;
+  top: 11px;
+}
+
+.Modal .Account .Or {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(89, 89, 89);
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 36px;
+}
+
+.Modal .Account .Ext {
+  display: inline-block;
+  width: 32px;
+  font-size: 14px;
+  padding: 0px 8px 9px 8px;
+  color: rgb(102, 102, 102);
+
+}
+
+.Modal .Account .Num {
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  border: none;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding: 4px 0px 8px;
+  width: 83%;
+  margin-left: 6px;
+}
+
+.Modal .Account .Num:focus {
+  border-bottom: 1px solid rgb(248, 68, 100);
+}
+
+.Modal .Account .Terms {
+  color: rgb(102, 102, 102);
+  font-size: 12px;
+  text-align: center;
+  padding: 14px 0px;
+  margin-top: 55px;
+}
+
+.Modal .Account .Terms a {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: underline;
+}
+
+.Modal .Account .Btn-Act {
+  padding: 12px 0px;
+  width: 100%;
+  background-color: rgb(248, 68, 100);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  transition: background-color 0.2s ease-in-out 0s;
+  margin-top: 48px;
+}
+
+.Modal .Account h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #333333;
+  margin-top: 50px;
+}
+
+.Modal .Account h6 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.Modal .Account h6 span {
+  font-weight: 500;
+}
+
+.Modal .Account .Chk {
+  height: 40px;
+  width: 40px;
+  color: rgb(51, 51, 51);
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  margin-right: 8px;
+  padding: 13px;
+  margin-top: 20px;
+}
+
+.Modal .Account .Chk:focus {
+  border: 1px solid rgb(248, 68, 100);
+}
+
+.Modal .Menu {
+  width: 360px;
+  height: 100%;
+  top: 0px;
+  background-color: rgb(255, 255, 255);
+  right: 0;
+  position: fixed;
+  z-index: 11;
+  border-radius: 2px;
+}
+
+.Modal .Menu .Strip {
+  background-color: rgb(46, 49, 71);
+  padding: 12px 18px;
+  width: 100%;
+  height: 62px;
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.Modal .Menu .Item {
+  padding: 12px 18px;
+  width: 100%;
+  height: 64px;
+  border-bottom: 1px solid rgb(241, 241, 241);
+  cursor: pointer;
+  position: relative;
+}
+
+.Modal .Menu .Item:hover {
+  background: rgb(241, 241, 241);
+}
+
+.Modal .Menu .Item div {
+  vertical-align: middle;
+  display: inline-block;
+  width: 238px;
+  font-size: 14px;
+  color: #333333;
+  margin-left: 16px;
+}
+
+.Modal .Menu .Item div span {
+  display: block;
+  font-size: 12px;
+  color: #666666;
+}
+
+.Modal .Menu .Item img {
+  max-width: 20px;
+}
+
+.Modal .Menu .Item img.Arrow {
+  position: absolute;
+  right: 18px;
+  top: 20px;
+}
+
+.Modal .Search {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  right: 0;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  z-index: 11;
+}
+
+.Modal .Search .Input {
+  width: 100vw;
+  height: 130px;
+  background: rgba(237, 237, 237, 0.5);
+  padding: 30px 30px 0px;
+  text-align: center;
+  position: relative;
+}
+
+.Modal .Search .Input input {
+  width: 700px;
+  height: 45px;
+  border: none;
+  font-size: 12px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.Modal .Search .Input .Arrow {
+  position: absolute;
+  left: 35px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.Modal .Search .Input .Close {
+  position: absolute;
+  right: 35px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.Modal .Search .Input input:focus {
+  outline: none;
+}
+
+.Modal .Search .Box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Modal .Search .Box>* {
+  flex: 0 0 33.33%;
+  margin-top: 50px;
+}
+
+.Modal .Search .Box p {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgb(220, 53, 88);
+  margin-bottom: 8px;
+}
+
+.Modal .Search .Box a {
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.Modal .Search .Box img {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.Modal .Search .Box span {
+  font-size: 11px;
+  color: #999999;
+}
+
+.Modal .Search .Tab {
+  font-size: 12px;
+  cursor: pointer;
+  padding: 8px 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(51, 51, 51);
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(242, 242, 242);
+  width: max-content;
+  margin-top: 30px;
+  float: left;
+}
+
+.Modal .Search .Tab:hover {
+  background: rgb(242, 242, 242);
+  color: rgb(153, 153, 153);
+}
+
+.Modal .Search .Filter div {
+  color: rgb(102, 102, 102);
+  font-size: 11px;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 4px 10px;
+  position: relative;
+  border-radius: 500px;
+  text-transform: uppercase;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(204, 204, 204);
+  display: inline-block;
+  width: max-content;
+}
+
+.Modal .Search .Filter div:hover {
+  color: rgb(220, 53, 88);
+  border-color: rgb(220, 53, 88);
+}
+
+.Modal .Search .Filter div.Desc {
+  color: rgb(102, 102, 102) !important;
+  font-size: 13px;
+  margin-left: 10px;
+  padding: 4px 10px;
+  position: relative;
+  background: rgb(255, 255, 255);
+  border: none !important;
+  display: inline-block;
+  width: max-content;
+  text-transform: none;
+}
+
+.Modal .Search .Filter {
+  float: right;
+  margin-top: 30px;
+}
+
+.Modal .Term,
+.Modal .Seat {
+  width: 515px;
+  height: auto;
+  top: 60px;
+  background-color: rgb(255, 255, 255);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  z-index: 11;
+  border-radius: 10px;
+  padding: 24px 42px;
+}
+
+.Modal .Term .Heading,
+.Modal .Seat .Heading {
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.Modal .Term .Heading img {
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+}
+
+.Modal .Term .Details {
+  color: #888c90;
+  font-size: 12px;
+}
+
+.Modal .Term .Actions {
+  margin-top: 30px;
+}
+
+.Modal .Term .Actions .Btn-Cn {
+  width: 49%;
+  height: 100%;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, .16);
+  border-radius: 8px;
+  cursor: pointer;
+  min-height: 40px;
+  max-width: 400px;
+  background: #fff;
+  color: #f84464;
+  border: 1px solid #f84464;
+  margin-right: 5px;
+}
+
+.Modal .Term .Actions .Btn-Ac {
+  width: 49%;
+  height: 100%;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, .16);
+  border-radius: 8px;
+  cursor: pointer;
+  min-height: 40px;
+  max-width: 400px;
+  background: #f84464;
+  color: #fff;
+  border: 1px solid #f84464;
+}
+
+.Modal .Seat .Actions {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.Modal .Seat .Actions .Img {
+  height: 130px;
+}
+
+.Modal .Seat .Actions img {
+  max-width: 130px;
+  vertical-align: bottom;
+  margin-bottom: 35px;
+}
+
+.Modal .Seat .Actions .Num>div {
+  cursor: pointer;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #333;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+.Modal .Seat .Actions .Num>div:hover,
+.Modal .Seat .Actions .Num>div.Active {
+  color: #fff;
+  background: #f84464;
+}
+
+.Modal .Seat .Details {
+  padding-top: 25px;
+  margin-top: 25px;
+  border-top: 2px solid rgba(245, 245, 245, .7);
+}
+
+.Modal .Seat .Class,
+.Modal .Seat .Filling {
+  font-size: 12px;
+  color: #666;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Modal .Seat .Cost {
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+}
+
+.Modal .Seat .Filling {
+  text-transform: none;
+}
+
+.Modal .Seat .Btn-Ac {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, .16);
+  border-radius: 8px;
+  cursor: pointer;
+  min-height: 40px;
+  max-width: 100%;
+  background: #f84464;
+  color: #fff;
+  border: 1px solid #f84464;
+  margin-top: 25px;
+}
+
+.Modal .Layout {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background-color: #fafafa;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  z-index: 11;
+  border-radius: 0px;
+}
+
+.Modal .Layout .Header {
+  position: relative;
+  width: 100%;
+  height: 74px;
+  min-width: 320px;
+  padding: 12px 0;
+  background: #1f2533;
+}
+
+.Modal .Layout .Header a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 14px;
+}
+
+.Modal .Layout .Header a span {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  border: 1px solid;
+  padding: 3px;
+  font-weight: 700;
+  position: relative;
+  top: -3px;
+  left: 8px;
+}
+
+.Modal .Layout .Header>div div {
+  line-height: 18px;
+  color: #c6c6c9;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 3px;
+}
+
+.Modal .Layout .Header .Seat-Select {
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  height: 26px;
+  width: 100px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+  right: 32px;
+  top: 10px;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+
+.Modal .Layout .Header .Seat-Select .Edit {
+  max-width: 16px;
+  margin-left: 7px;
+  margin-top: -3px;
+}
+
+.Modal .Layout .Arrow {
+  position: absolute;
+  left: -22px;
+  top: 7px;
+  max-width: 30px;
+  cursor: pointer;
+}
+
+.Modal .Layout .Close {
+  position: absolute;
+  right: -22px;
+  top: 10px;
+  max-width: 30px;
+  cursor: pointer;
+}
+
+.Modal .Layout .Time {
+  position: relative;
+  width: 100%;
+  height: 74px;
+  min-width: 320px;
+  background: #f5f5fa;
+}
+
+.Modal .Layout .Time>div>div {
+  display: inline-block;
+  background-color: #2dc492;
+  color: #FFF;
+  font-size: 12px;
+  padding: 9px 5px;
+  border-radius: 3px;
+  border: 1px solid #2dc492;
+  margin: 0 5px;
+  min-width: 96px;
+  max-width: 120px;
+  height: 38px;
+  text-align: center;
+  vertical-align: bottom;
+  margin-top: 18px;
+  cursor: pointer;
+}
+
+.Modal .Layout .Rows {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  max-height: 68%;
+  overflow-y: auto;
+}
+
+.Modal .Layout .Rows .Seat-Type {
+  width: 100%;
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 5px;
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+  text-transform: uppercase;
+}
+
+.Modal .Layout .Rows .Seat-Row {
+  margin-right: 44px;
+  margin-top: 14px;
+  font-size: 14px;
+  color: #b3b3b3;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.Modal .Layout .Rows .Seat-Column {
+  display: inline-block;
+  font-size: 10px;
+  line-height: 25px;
+  font-weight: 400;
+  background: #fff;
+  vertical-align: top;
+  border: 1px solid #1ea83c;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-right: 10px;
+  margin-top: 14px;
+  text-align: center;
+  color: #1ea83c;
+}
+
+.Modal .Layout .Rows .Seat-Column:hover,
+.Modal .Layout .Rows .Seat-Column.Active {
+  background: #1ea83c;
+  border: 1px solid #1ea83c;
+  color: #fff;
+}
+
+.Modal .Layout .Rows .Seat-Column.Booked {
+  background: #eee;
+  cursor: default;
+  border: 1px solid #eee;
+  color: #FFFFFF;
+}
+
+.Modal .Layout .Rows .Seat-Selection {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.Modal .Layout .Rows .Screen {
+  max-width: 300px;
+  margin-top: 35px;
+  margin-bottom: 0px;
+}
+
+.Modal .Layout .Rows .Screen-Info {
+  text-align: center;
+  color: #333;
+  font-size: 12px;
+}
+
+.Modal .Layout .Indication {
+  height: 32px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  background-color: #fff;
+  padding-top: 8px;
+}
+
+.Modal .Layout .Indication>div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.Modal .Layout .Indication .Seat-Info {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  margin-left: 8px;
+  margin-right: 32px;
+  position: relative;
+  top: -2px;
+}
+
+.Modal .Layout .Indication .Booked-Seat {
+  background: #eee;
+  border: 1px solid #eee;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+}
+
+.Modal .Layout .Indication .Available-Seat {
+  background: #fff;
+  border: 1px solid #1ea83c;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+}
+
+.Modal .Layout .Indication .Selected-Seat {
+  background: #1ea83c;
+  border: 1px solid #1ea83c;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+}
+
+.Modal .Layout .Payment {
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+  z-index: 100;
+}
+
+.Modal .Layout .Payment button {
+  width: 49%;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, .16);
+  border-radius: 8px;
+  cursor: pointer;
+  min-height: 40px;
+  max-width: 400px;
+  background: #f84464;
+  color: #fff;
+  font-size: 16px;
+  height: 40px;
+  border: none;
+  margin-top: 7px;
+}
+
+.Modal .Layout .Payment-Con {
+  margin-top: 20px;
+}
+
+.Modal .Layout .Payment-Con .W30>div.Card {
+  background-color: #FFF;
+  border-radius: 2px;
+  border: 1px solid #dfe3e7;
+  height: auto;
+  min-height: 300px;
+  padding: 32px 0px;
+  position: relative;
+}
+
+.Modal .Layout .Payment-Con .W30 .Heading {
+  position: relative;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+  text-align: left;
+  color: #c02c39;
+  padding: 0px 32px;
+}
+
+.Modal .Layout .Payment-Con .W30 .Info {
+  position: relative;
+  font-size: 14px;
+  color: #1f2533;
+  margin-bottom: 16px;
+  padding: 0px 32px;
+}
+
+.Modal .Layout .Payment-Con .W30 .Info .Tick {
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.Modal .Layout .Payment-Con .W30 .Info .Audi {
+  font-size: 12px;
+  display: block;
+  color: #969696;
+}
+
+.Modal .Layout .Payment-Con .W30 .Info .Cf {
+  font-size: 12px;
+}
+
+.Modal .Layout .Payment-Con .W30 .Info .Fl {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  text-align: left;
+  float: none !important;
+}
+
+.Modal .Layout .Payment-Con .W30 .Info .Fr {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  text-align: right;
+  float: none !important;
+}
+
+.Modal .Layout .Payment-Con .W30 .Sub {
+  border-top: 1px dotted #ccc;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+
+.Modal .Layout .Payment-Con .W30 .Payable {
+  background-color: #fffcdc;
+  padding-top: 16px;
+  padding-bottom: 2px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.Modal .Layout .Payment-Con .W30 .Payable .Info {
+  font-size: 16px;
+}
+
+
+.Modal .Layout .Payment-Con .W30 .Action .Details {
+  font-size: 12px;
+  line-height: 16px;
+  color: #404040;
+  padding: 0px 16px;
+  margin-top: 20px;
+}
+
+.Modal .Layout .Payment-Con .W30 .Action .Act {
+  background: #f84464;
+  border-radius: 6px;
+  padding-top: 18px;
+  padding-bottom: 2px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.Modal .Layout .Payment-Con .W30 .Action .Act .Info {
+  color: #fff;
+  font-size: 16px;
+}
+
+.Modal .Layout .Payment-Con .W70 {
+  padding-right: 30px;
+}
+
+.Modal .Layout .Payment-Con .W70 img.Banner {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.Modal .Layout .Payment-Con .W70 .Card {
+  background-color: #FFF;
+  border-radius: 2px;
+  border: 1px solid #dfe3e7;
+  height: auto;
+  min-height: 300px;
+  padding: 32px;
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.Modal .Layout .Payment-Con .W70 .Card .Heading {
+  line-height: 28px;
+  letter-spacing: 3px;
+  font-size: 25px;
+  color: #333;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+.Modal .Layout .Payment-Con .Flx {
+  align-items: flex-start !important;
+}
+
+.Modal .Layout .Payment-Con .W70 .Card .Heading span {
+  color: #c02c39;
+}
+
+.Modal .Layout .Payment-Con .W70 .Card .Details {
+  font-size: 14px;
+  color: #666;
+}
+
+.Modal .Layout .Payment-Con .W70 .Card .Slide {
+  display: inline-block;
+  width: 33%;
+  vertical-align: top;
+  margin-top: 30px;
+}
+
+.Modal .Layout .Payment-Con .W70 .Card .Slide img {
+  padding: 5px;
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+  cursor: pointer;
+}
+
+.Modal .Layout .Payment-Con .W70 .Card .Note {
+  font-size: 11px;
+  color: #969696;
+  font-weight: 500;
+  text-align: left;
+  margin-top: 30px;
+}
+
+/* Single */
+
+.Single>div {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: #fff;
+  border-radius: 10px;
+  min-height: 300px;
+  height: auto;
+  text-align: center;
+}
+
+.Single>div img {
+  max-width: 100px;
+  margin-top: 38px;
+}
+
+.Single>div p {
+  font-size: 32px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.Single>div a {
+  color: #f84464;
+}
+
+/* Movies */
+
+.Movie-Hero {
+  min-height: 480px;
+  height: auto;
+  width: 100%;
+  background-color: rgb(26, 26, 26);
+  background-position: right;
+  background-image: linear-gradient(90deg, #1A1A1A 24.97%, #1A1A1A 38.3%, rgba(26, 26, 26, 0.0409746) 97.47%, #1A1A1A 100%), url(./assets/images/movies/background.png);
+}
+
+.Movie-Hero>div {
+  padding: 32px 0px;
+  position: relative;
+}
+
+.Movie-Hero .W25 {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 262px !important;
+}
+
+.Movie-Hero .W75 {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.Movie-Hero .W25 .Post {
+  position: relative;
+}
+
+.Movie-Hero .W25 img {
+  border-radius: 16px 16px 0px 0px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.Movie-Hero .W25 .Info {
+  border-radius: 0px 0px 16px 16px;
+  background: rgb(0, 0, 0);
+  padding: 8px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.Movie-Hero .W25 .Play {
+  cursor: pointer;
+  z-index: 1;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  background: rgba(34, 34, 34, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 8px;
+  border-radius: 24px;
+  padding: 4px 8px;
+}
+
+.Movie-Hero .W25 .Play span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: rgb(255, 255, 255);
+  padding-left: 4px;
+}
+
+.Movie-Hero .W25 .Play img {
+  width: 18px;
+  height: auto;
+}
+
+.Movie-Hero .W75 h2 {
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.Movie-Hero .W75 .Review {
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.Movie-Hero .W75 .Review img {
+  width: 36px;
+}
+
+.Movie-Hero .W75 .Review span {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  position: relative;
+  top: 6px;
+}
+
+.Movie-Hero .W75 .Review span strong {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.Movie-Hero .W75 .Rating {
+  width: 446px;
+  height: 74px;
+  background-color: rgb(51, 51, 51);
+  padding: 12px 24px;
+  border-radius: 8px;
+  position: relative;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.Movie-Hero .W75 .Rating h4 {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 0px;
+}
+
+.Movie-Hero .W75 .Rating h5 {
+  padding-top: 2px;
+  color: rgb(204, 204, 204);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.Movie-Hero .W75 .Rating button {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  position: absolute;
+  right: 24px;
+  top: 16px;
+  padding: 8px 12px;
+  border: none;
+  color: rgb(51, 51, 51);
+  font-weight: 500;
+}
+
+.Movie-Hero .W75 .Tags {
+  margin-top: 16px;
+}
+
+.Movie-Hero .W75 .Tags>div {
+  background-color: rgb(229, 229, 229);
+  color: rgb(0, 0, 0);
+  padding: 2px 8px;
+  border-radius: 2px;
+  margin-top: 8px;
+  margin-right: 8px;
+  width: max-content;
+  display: inline-block;
+}
+
+.Movie-Hero .W75 .Tags>div span {
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.Movie-Hero .W75 .Tags>div span:hover {
+  border-bottom: 1px solid;
+}
+
+.Movie-Hero .W75 .Info {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 20px;
+}
+
+.Movie-Hero .W75 .Info span {
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+.Movie-Hero .W75 .Btn-Tickets {
+  border: 1px solid rgb(248, 68, 100);
+  color: rgb(255, 255, 255);
+  background-color: rgb(248, 68, 100);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 8px;
+  width: 216px;
+  height: 50px;
+  margin-top: 36px;
+  font-weight: 500;
+}
+
+.Movie-Hero .Share {
+  position: absolute;
+  top: 32px;
+  right: 12px;
+  height: 48px;
+  width: 122px;
+  background-color: rgba(34, 34, 34, 0.8);
+  opacity: 0.8;
+  padding: 7px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.Movie-Hero .Share img {
+  width: 32px;
+}
+
+.Movie-Hero .Share span {
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 14px;
+  color: rgb(255, 255, 255);
+}
+
+.Movie-Details {
+  background-color: #FFFFFF;
+}
+
+.Movie-Details>div>div {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgb(229, 229, 229);
+  max-width: 926px;
+}
+
+.Movie-Details>div>div h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 0px;
+}
+
+.Movie-Details>div>div p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: rgb(51, 51, 51);
+  padding-top: 16px;
+  margin-bottom: 0px;
+}
+
+.Movie-Details>div>div .Offers {
+  width: 100%;
+  min-height: 86px;
+  min-width: 446px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  max-width: 446px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='%23FFD564FF' stroke-width='3' stroke-dasharray='4%2c10' stroke-dashoffset='6' stroke-linecap='square'/%3e%3c/svg%3e");
+  background-color: rgb(255, 241, 204);
+  margin-top: 16px;
+}
+
+.Movie-Details>div>div .Offers div {
+  color: rgb(51, 51, 51);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+
+.Movie-Details>div>div .Offers div img {
+  max-width: 27px;
+  margin-right: 10px;
+  position: relative;
+  top: 4px;
+}
+
+.Movie-Details>div>div .Offers span {
+  color: rgb(102, 102, 102);
+  padding-top: 2px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-left: 44px;
+  position: relative;
+  top: -5px;
+}
+
+.Movie-Details .Circle-Card {
+  width: 120px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin-right: 32px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.Movie-Details .Circle-Card img {
+  border-radius: 100%;
+  width: 100%;
+}
+
+.Movie-Details .Circle-Card div {
+  color: rgb(0, 0, 0);
+  padding-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.Movie-Details .Circle-Card span {
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.Movie-Details .Tags>div {
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(204, 204, 204);
+  padding: 6px 2px;
+  margin-right: 16px;
+  display: inline-block;
+  width: max-content;
+  color: rgb(235, 78, 98);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  padding-left: 16px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.Movie-Details .Tags>div span {
+  background: rgb(229, 229, 229);
+  border-radius: 2px;
+  padding: 2px 4px;
+  margin: 0px 16px 0px 8px;
+  text-transform: uppercase;
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.Movie-Details .Report {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  color: rgb(102, 102, 102);
+  cursor: pointer;
+  height: 16px;
+  padding-bottom: 70px;
+  margin-top: 20px;
+}
+
+.Booking-Modal {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 8px 0px;
+  display: flex;
+  width: 100%;
+  animation: 0.3s ease 0s 1 normal none running;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+  height: 86px;
+}
+
+.Booking-Modal>div {
+  position: relative;
+}
+
+.Booking-Modal h2 {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: -2px;
+  margin-top: 13px;
+}
+
+.Booking-Modal .Review {
+  cursor: pointer;
+}
+
+.Booking-Modal .Review img {
+  width: 20px;
+  position: relative;
+  top: 4px;
+}
+
+.Booking-Modal .Review span {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  position: relative;
+  top: 6px;
+}
+
+.Booking-Modal .Review span strong {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.Booking-Modal .Btn-Tickets {
+  border: 1px solid rgb(248, 68, 100);
+  color: rgb(255, 255, 255);
+  background-color: rgb(248, 68, 100);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 8px;
+  width: 216px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-weight: 500;
+}
+
+.Modal .ShowFormat {
+  width: 360px;
+  height: auto;
+  top: 60px;
+  background-color: rgb(255, 255, 255);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  z-index: 11;
+  border-radius: 10px;
+  padding: 24px 0px;
+}
+
+.Modal .ShowFormat .Name {
+  font-size: 12px;
+  margin-left: 16px;
+  position: relative;
+}
+
+.Modal .ShowFormat .Name img {
+  width: 12px;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.Modal .ShowFormat span {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  padding-top: 2px;
+  margin-left: 16px;
+}
+
+.Modal .ShowFormat .Title {
+  background: rgb(242, 245, 249);
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #666666;
+  margin-top: 14px;
+  text-transform: uppercase;
+}
+
+.Modal .ShowFormat .Tags {
+  min-width: 64px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 16px;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: rgb(220, 53, 75);
+  font-size: 14px;
+  margin-top: 14px;
+  margin-left: 16px;
+  width: max-content;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Theaters */
+
+.Theaters .Banner {
+  width: 100%;
+  height: 130px;
+  background: #333545;
+}
+
+.Theaters .Banner a {
+  color: #f4f4f4;
+  float: left;
+  width: max-content;
+  max-width: 70%;
+  text-decoration: none;
+  font-size: 36px;
+  text-transform: capitalize;
+  display: contents;
+}
+
+.Theaters .Banner a:hover {
+  text-decoration: underline;
+}
+
+.Theaters .Banner .Tags {
+  font-size: 10px;
+  color: rgba(255, 255, 255, .5);
+  background: 0 0;
+  padding: 2px 8px;
+  border-radius: 11px;
+  border: 1px solid rgba(255, 255, 255, .5);
+  margin-right: 5px;
+  text-transform: uppercase;
+  display: inline-block;
+  width: max-content;
+}
+
+.Theaters .Banner>div>div:first-child {
+  padding-top: 18px;
+}
+
+.Theaters .Dates {
+  background-color: #FFFFFF;
+  height: 64px;
+  width: 100%;
+  padding: 6px 0px;
+}
+
+.Theaters .Dates .Item {
+  height: auto;
+  width: 50px;
+  border-radius: 8px;
+  margin-right: 4px;
+  display: inline-block;
+  text-align: center;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.Theaters .Dates .Item.Active {
+  background-color: #f84464;
+}
+
+.Theaters .Dates .Item.Active div {
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.Theaters .Dates .Item .Day,
+.Theaters .Dates .Item .Month {
+  color: #666;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.Theaters .Dates .Item .Date {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #333;
+}
+
+.Theaters .Dates>div>div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.Theaters .Dates .Options .Format {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  text-transform: capitalize;
+  padding: 15px;
+  border-bottom: 4px solid#f84464;
+  border-left: 1px solid #eceef1;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.Theaters .Dates .Options .Format span {
+  text-transform: uppercase;
+}
+
+.Theaters .Dates .Options .Filter {
+  font-size: 12px;
+  font-weight: 400;
+  color: #0e1422;
+  text-transform: capitalize;
+  padding: 15px;
+  border-left: 1px solid #eceef1;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.Theaters .Dates .Options .Search {
+  padding: 15px;
+  border-left: 1px solid #eceef1;
+  border-right: 1px solid #eceef1;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.Theaters .Dates .Options {
+  float: right;
+}
+
+.Theaters .Dates .Options .Search img {
+  max-width: 20px;
+}
+
+.Theaters .Availability>div {
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin-top: 24px;
+  margin-bottom: -40px;
+  min-height: 300px;
+  height: auto;
+  width: 100%;
+  padding-top: 48px;
+  padding-bottom: 56px;
+}
+
+.Theaters .Availability .Status {
+  padding: 10px 16px;
+  min-height: 32px;
+  height: auto;
+  float: right;
+  position: relative;
+  top: -46px;
+  margin-bottom: -18px;
+}
+
+.Theaters .Availability .Status .Available {
+  padding: 4px;
+  border-radius: 4px;
+  background-color: #4abd5d;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+}
+
+.Theaters .Availability .Status .Txt {
+  color: #717171;
+  text-transform: uppercase;
+  font-size: 10px;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.Theaters .Availability .Status .Filling {
+  padding: 4px;
+  border-radius: 4px;
+  background-color: #f60;
+  width: 8px;
+  height: 8px;
+  margin-left: 14px;
+  display: inline-block;
+}
+
+.Theaters .Availability .Seats {
+  padding: 32px 24px;
+  border-top: 1px solid #f2f2f2;
+  width: 100%;
+}
+
+.Theaters .Availability .Seats .Name {
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+  cursor: pointer;
+}
+
+.Theaters .Availability .Seats .Name img {
+  max-width: 19px;
+  margin-right: 10px;
+}
+
+.Theaters .Availability .Seats .Name span img {
+  max-width: 16px;
+  margin-right: 4px;
+}
+
+.Theaters .Availability .Seats .Name {
+  position: relative;
+}
+
+.Theaters .Availability .Seats .Name span {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #7d7d7d;
+  margin-left: 4px;
+  position: absolute;
+  right: 0;
+  top: 1px;
+}
+
+.Theaters .Availability .Seats .Mticket {
+  font-size: 12px;
+  color: #49ba8e;
+  margin-left: 29px;
+  position: relative;
+  top: 8px;
+  cursor: pointer;
+}
+
+.Theaters .Availability .Seats .FB {
+  font-size: 12px;
+  color: #ffa426;
+  margin-left: 12px;
+  position: relative;
+  top: 8px;
+  cursor: pointer;
+}
+
+.Theaters .Availability .Seats .W75 {
+  margin-left: 48px;
+}
+
+.Theaters .Availability .Seats .Timings {
+  width: 110px;
+  height: 40px;
+  border: 1px solid #999;
+  padding: 4px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 14px;
+  position: relative;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.Theaters .Availability .Seats .Timings.Available {
+  color: #4abd5d;
+}
+
+.Theaters .Availability .Seats .Timings.Filling {
+  color: #f60;
+}
+
+.Privacy-Box div {
+  font-size: 12px;
+  line-height: 16px;
+  color: #999;
+  margin-top: 36px;
+}
+
+.Privacy-Box div span {
+  font-size: 12px;
+  line-height: 14px;
+  color: #7f7f7f;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Utilities */
+
+.W100 {
+  width: 100%;
+}
+
+.W75 {
+  width: 75% !important;
+}
+
+.W70 {
+  width: 70% !important;
+}
+
+.W65 {
+  width: 65%;
+}
+
+.W60 {
+  width: 60%;
+}
+
+.W40 {
+  width: 40%;
+}
+
+.W35 {
+  width: 35%;
+}
+
+.W30 {
+  width: 30%;
+}
+
+.W25 {
+  width: 25% !important;
+}
+
+.W20 {
+  width: 20%;
+}
+
+.Mt2 {
+  margin-top: 212px !important;
+}
+
+.Mbm40 {
+  margin-bottom: -40px !important;
+}
+
+.Mtm25 {
+  margin-top: -25px !important;
+}
+
+.Fl {
+  float: left;
+}
+
+.Fr {
+  float: right;
+}
+
+.Flx {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.Flx-fs {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+  align-items: center;
+}
+
+.Flx-fe {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  align-items: center;
+}
+
+.FlxWrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.FlxWrap>* {
+  flex: 0 0 20%;
+}
+
+.container {
+  position: relative;
+  height: inherit;
+}
+
+input:focus-visible {
+  outline: 0px;
+}
+
+.Prel {
+  position: relative;
+}
+
+.Jc-Space {
+  justify-content: space-around;
+}
+
+.Btn-Primary-Sm {
+  color: rgb(255, 255, 255);
+  background-color: rgb(248, 68, 100);
+  font-size: 12px;
+  height: 25px;
+  width: 67px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid rgb(248, 68, 100);
+}
+
+.Btn-Primary-Lg {
+  color: rgb(255, 255, 255);
+  background-color: rgb(236, 94, 113);
+  font-size: 16px;
+  height: 40px;
+  width: 145px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 6px 20px;
+  border: 1px solid rgb(236, 94, 113);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
