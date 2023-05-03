@@ -8,15 +8,20 @@ import LocationModal from "../locationModal";
 import AccountModal from "../accountModal";
 import MenuModal from "../menuModel";
 import SearchModal from "../searchModal";
+import SignoutModal from "../signoutModal";
 import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function Navigation() {
+    const state = useSelector((state) => state);
+
     // Modals
     const [location, setLocation] = useState("Chennai");
     const [locationModalVisibility, setLocationModalVisibility] = useState(false);
     const [accountModalVisibility, setAccountModalVisibility] = useState(false);
     const [menuModalVisibility, setMenuModalVisibility] = useState(false);
     const [searchModalVisibility, setSearchModalVisibility] = useState(false);
+    const [signoutModalVisibility, setSignoutModalVisibility] = useState(false);
 
     const openLocationModal = () => {
         setLocationModalVisibility(true);
@@ -40,6 +45,16 @@ function Navigation() {
 
     const closeAccountModal = () => {
         setAccountModalVisibility(false);
+        enableScroll();
+    }
+
+    const openSignoutModal = () => {
+        setSignoutModalVisibility(true);
+        disableScroll();
+    }
+
+    const closeSignoutModal = () => {
+        setSignoutModalVisibility(false);
         enableScroll();
     }
 
@@ -95,7 +110,17 @@ function Navigation() {
                                 <span>&#x25BC;</span>
                             </div>
                             <div className="Access">
-                                <button className="Btn-Primary-Sm" onClick={openAccountModal}> Sign in </button>
+                                {state.userMobileNumber === 0 ?
+                                    <button className="Btn-Primary-Sm" onClick={openAccountModal}> Sign in </button>
+                                    :
+                                    <button 
+                                        className="Btn-Primary-Sm" 
+                                        style={{width: "max-content", fontWeight: 500}} 
+                                        onClick={openSignoutModal}> 
+                                            Hi, {state.userMobileNumber} 
+                                    </button>
+                                }
+
                             </div>
                             <div className="Menu">
                                 <img src={HamburgerGray} alt="Hamburger Menu" onClick={openMenuModal} title="Hamburger Menu" />
@@ -111,7 +136,7 @@ function Navigation() {
                             {Store.Data.MainMenu.map((item, i) => {
                                 return (
                                     <span className="Prel" key={i}>
-                                        <NavLink to={item.link} target="_blank" rel="noreferrer">
+                                        <NavLink to={item.link}>
                                             {item.name}
                                             {item.isNew && <span>NEW</span>}
                                         </NavLink>
@@ -124,7 +149,7 @@ function Navigation() {
                             {Store.Data.SubMenu.map((item, i) => {
                                 return (
                                     <span className="Prel" key={i}>
-                                        <NavLink to={item.link} target="_blank" rel="noreferrer">
+                                        <NavLink to={item.link}>
                                             {item.name}
                                         </NavLink>
                                     </span>
@@ -158,6 +183,11 @@ function Navigation() {
             <SearchModal
                 visible={searchModalVisibility}
                 close={closeSearchModal}
+            />
+
+            <SignoutModal
+                visible={signoutModalVisibility}
+                close={closeSignoutModal}
             />
         </section>
     );

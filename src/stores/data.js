@@ -181,21 +181,20 @@ const Data = {
         { language: "Hindi", format: [{ type: "2D" }] },
     ],
     TheaterDates: [
-        { day: "MON", date: "01", month: "MAY", isActive: true },
-        { day: "TUE", date: "02", month: "MAY", isActive: false },
-        { day: "WED", date: "03", month: "MAY", isActive: false },
-        { day: "THU", date: "04", month: "MAY", isActive: false },
-        { day: "FRI", date: "05", month: "MAY", isActive: false },
+        { day: "MON", date: "01", month: "MAY", key:"01 MAY 2023" },
+        { day: "TUE", date: "02", month: "MAY", key:"02 MAY 2023" },
+        { day: "WED", date: "03", month: "MAY", key:"03 MAY 2023" },
     ],
     Theaters: [
         {
             name: "INOX: Chennai Citi Centre",
             isMticket: true,
             isFB: true,
+            date: "01 MAY 2023",
             timings: [
-                { time: "10:00 AM", isFastFilling: true, ticketCost: 120, seatType: "Executive Class" },
+                { time: "10:10 AM", isFastFilling: true, ticketCost: 120, seatType: "Executive Class" },
                 { time: "02:00 PM", isFastFilling: true, ticketCost: 130, seatType: "First Class" },
-                { time: "06:00 PM", isFastFilling: false, ticketCost: 120, seatType: "First Class" },
+                { time: "06:10 PM", isFastFilling: false, ticketCost: 120, seatType: "First Class" },
                 { time: "10:00 PM", isFastFilling: false, ticketCost: 140, seatType: "Executive Class" }
             ]
         },
@@ -203,20 +202,22 @@ const Data = {
             name: "MAYAJAAL Multiplex: ECR",
             isMticket: true,
             isFB: true,
+            date: "01 MAY 2023",
             timings: [
-                { time: "10:00 AM", isFastFilling: false, ticketCost: 120, seatType: "Executive Class" },
+                { time: "09:00 AM", isFastFilling: false, ticketCost: 120, seatType: "Executive Class" },
                 { time: "02:00 PM", isFastFilling: false, ticketCost: 180, seatType: "First Class" },
                 { time: "06:00 PM", isFastFilling: true, ticketCost: 120, seatType: "Executive Class" },
-                { time: "10:00 PM", isFastFilling: false, ticketCost: 110, seatType: "Executive Class" }
+                { time: "09:00 PM", isFastFilling: false, ticketCost: 110, seatType: "Executive Class" }
             ]
         },
         {
             name: "AGS Cinemas: OMR",
             isMticket: true,
             isFB: true,
+            date: "01 MAY 2023",
             timings: [
-                { time: "10:00 AM", isFastFilling: false, ticketCost: 120, seatType: "First Class" },
-                { time: "02:00 PM", isFastFilling: false, ticketCost: 130, seatType: "First Class" },
+                { time: "11:00 AM", isFastFilling: false, ticketCost: 120, seatType: "First Class" },
+                { time: "03:00 PM", isFastFilling: false, ticketCost: 130, seatType: "First Class" },
                 { time: "06:00 PM", isFastFilling: false, ticketCost: 120, seatType: "Executive Class" },
                 { time: "10:00 PM", isFastFilling: false, ticketCost: 150, seatType: "Executive Class" }
             ]
@@ -225,10 +226,11 @@ const Data = {
             name: "Anna Cinemas: Mount Road",
             isMticket: true,
             isFB: true,
+            date: "01 MAY 2023",
             timings: [
-                { time: "10:00 AM", isFastFilling: true, ticketCost: 100, seatType: "Executive Class" },
-                { time: "02:00 PM", isFastFilling: true, ticketCost: 120, seatType: "First Class" },
-                { time: "06:00 PM", isFastFilling: true, ticketCost: 170, seatType: "Executive Class" },
+                { time: "08:00 AM", isFastFilling: true, ticketCost: 100, seatType: "Executive Class" },
+                { time: "01:00 PM", isFastFilling: true, ticketCost: 120, seatType: "First Class" },
+                { time: "05:00 PM", isFastFilling: true, ticketCost: 170, seatType: "Executive Class" },
                 { time: "10:00 PM", isFastFilling: false, ticketCost: 120, seatType: "Executive Class" }
             ]
         },
@@ -236,157 +238,148 @@ const Data = {
             name: "EVP Cinemas: Chennai",
             isMticket: true,
             isFB: true,
+            date: "01 MAY 2023",
             timings: [
-                { time: "10:00 AM", isFastFilling: false, ticketCost: 90, seatType: "Executive Class" },
+                { time: "10:30 AM", isFastFilling: false, ticketCost: 90, seatType: "Executive Class" },
                 { time: "02:00 PM", isFastFilling: false, ticketCost: 120, seatType: "First Class" },
-                { time: "06:00 PM", isFastFilling: false, ticketCost: 130, seatType: "Executive Class" },
+                { time: "06:05 PM", isFastFilling: false, ticketCost: 130, seatType: "Executive Class" },
                 { time: "10:00 PM", isFastFilling: true, ticketCost: 120, seatType: "First Class" }
+            ]
+        },
+        {
+            name: "Maruthi Cinemas: Tharamani",
+            isMticket: true,
+            isFB: true,
+            date: "02 MAY 2023",
+            timings: [
+                { time: "07:00 AM", isFastFilling: false, ticketCost: 120, seatType: "Executive Class" },
+                { time: "12:00 PM", isFastFilling: false, ticketCost: 130, seatType: "First Class" },
+                { time: "06:10 PM", isFastFilling: false, ticketCost: 120, seatType: "First Class" },
+                { time: "10:00 PM", isFastFilling: false, ticketCost: 140, seatType: "Executive Class" }
+            ]
+        },
+        {
+            name: "Broadway Multiplex: OMR",
+            isMticket: true,
+            isFB: true,
+            date: "02 MAY 2023",
+            timings: [
+                { time: "10:00 AM", isFastFilling: false, ticketCost: 120, seatType: "Executive Class" },
+                { time: "01:00 PM", isFastFilling: false, ticketCost: 180, seatType: "First Class" },
+                { time: "04:00 PM", isFastFilling: false, ticketCost: 120, seatType: "Executive Class" },
+                { time: "08:00 PM", isFastFilling: true, ticketCost: 110, seatType: "Executive Class" }
+            ]
+        },
+        {
+            name: "Besant Cinemas: Paris Corner",
+            isMticket: true,
+            isFB: true,
+            date: "02 MAY 2023",
+            timings: [
+                { time: "09:00 AM", isFastFilling: false, ticketCost: 120, seatType: "First Class" },
+                { time: "01:10 PM", isFastFilling: true, ticketCost: 130, seatType: "First Class" },
+                { time: "06:50 PM", isFastFilling: false, ticketCost: 120, seatType: "Executive Class" },
+                { time: "10:00 PM", isFastFilling: false, ticketCost: 150, seatType: "Executive Class" }
+            ]
+        },
+        {
+            name: "Sivam Cinemas: Navalur",
+            isMticket: true,
+            isFB: true,
+            date: "02 MAY 2023",
+            timings: [
+                { time: "10:10 AM", isFastFilling: false, ticketCost: 90, seatType: "Executive Class" },
+                { time: "02:20 PM", isFastFilling: true, ticketCost: 120, seatType: "First Class" },
+                { time: "06:20 PM", isFastFilling: false, ticketCost: 130, seatType: "Executive Class" },
+                { time: "10:40 PM", isFastFilling: false, ticketCost: 120, seatType: "First Class" }
+            ]
+        },
+        {
+            name: "PVR: East Coast Mall",
+            isMticket: true,
+            isFB: true,
+            date: "03 MAY 2023",
+            timings: [
+                { time: "07:00 AM", isFastFilling: false, ticketCost: 120, seatType: "Executive Class" },
+                { time: "01:00 PM", isFastFilling: false, ticketCost: 130, seatType: "First Class" },
+                { time: "05:00 PM", isFastFilling: false, ticketCost: 120, seatType: "First Class" },
+                { time: "10:00 PM", isFastFilling: true, ticketCost: 140, seatType: "Executive Class" }
+            ]
+        },
+        {
+            name: "VVP Cinemas: Thambaram",
+            isMticket: true,
+            isFB: true,
+            date: "03 MAY 2023",
+            timings: [
+                { time: "08:00 AM", isFastFilling: false, ticketCost: 120, seatType: "Executive Class" },
+                { time: "02:00 PM", isFastFilling: false, ticketCost: 180, seatType: "First Class" },
+                { time: "04:00 PM", isFastFilling: false, ticketCost: 120, seatType: "Executive Class" },
+                { time: "09:00 PM", isFastFilling: false, ticketCost: 110, seatType: "Executive Class" }
+            ]
+        },
+        {
+            name: "SGP Theater: T.Nagar",
+            isMticket: true,
+            isFB: true,
+            date: "03 MAY 2023",
+            timings: [
+                { time: "10:30 AM", isFastFilling: false, ticketCost: 120, seatType: "First Class" },
+                { time: "02:40 PM", isFastFilling: true, ticketCost: 130, seatType: "First Class" },
+                { time: "06:50 PM", isFastFilling: false, ticketCost: 120, seatType: "Executive Class" },
+                { time: "10:20 PM", isFastFilling: false, ticketCost: 150, seatType: "Executive Class" }
+            ]
+        },
+        {
+            name: "Thambi Cinemas: Usman Road",
+            isMticket: true,
+            isFB: true,
+            date: "03 MAY 2023",
+            timings: [
+                { time: "09:50 AM", isFastFilling: false, ticketCost: 100, seatType: "Executive Class" },
+                { time: "01:55 PM", isFastFilling: true, ticketCost: 120, seatType: "First Class" },
+                { time: "06:30 PM", isFastFilling: false, ticketCost: 170, seatType: "Executive Class" },
+                { time: "10:10 PM", isFastFilling: false, ticketCost: 120, seatType: "Executive Class" }
+            ]
+        },
+        {
+            name: "Sakthi Cinemas: Chennai",
+            isMticket: true,
+            isFB: true,
+            date: "03 MAY 2023",
+            timings: [
+                { time: "11:00 AM", isFastFilling: false, ticketCost: 90, seatType: "Executive Class" },
+                { time: "03:00 PM", isFastFilling: true, ticketCost: 120, seatType: "First Class" },
+                { time: "05:00 PM", isFastFilling: false, ticketCost: 130, seatType: "Executive Class" },
+                { time: "07:00 PM", isFastFilling: true, ticketCost: 120, seatType: "First Class" }
             ]
         },
 
     ],
-    TheaterLayout: [
-        {
-            row: "A",
-            column: [
-                { number: 1, isBooked: false },
-                { number: 2, isBooked: false },
-                { number: 3, isBooked: false },
-                { number: 4, isBooked: true },
-                { number: 5, isBooked: false },
-                { number: 6, isBooked: false },
-                { number: 7, isBooked: true },
-                { number: 8, isBooked: true },
-                { number: 9, isBooked: false },
-                { number: 10, isBooked: false },
-                { number: 11, isBooked: false },
-                { number: 12, isBooked: false },
-                { number: 13, isBooked: true },
-                { number: 14, isBooked: true },
-                { number: 15, isBooked: true },
-            ]
-        },
-        {
-            row: "B",
-            column: [
-                { number: 1, isBooked: false },
-                { number: 2, isBooked: false },
-                { number: 3, isBooked: false },
-                { number: 4, isBooked: true },
-                { number: 5, isBooked: false },
-                { number: 6, isBooked: false },
-                { number: 7, isBooked: true },
-                { number: 8, isBooked: true },
-                { number: 9, isBooked: false },
-                { number: 10, isBooked: false },
-                { number: 11, isBooked: true },
-                { number: 12, isBooked: true },
-                { number: 13, isBooked: true },
-                { number: 14, isBooked: true },
-                { number: 15, isBooked: true },
-            ]
-        },
-        {
-            row: "C",
-            column: [
-                { number: 1, isBooked: false },
-                { number: 2, isBooked: false },
-                { number: 3, isBooked: false },
-                { number: 4, isBooked: false },
-                { number: 5, isBooked: false },
-                { number: 6, isBooked: false },
-                { number: 7, isBooked: false },
-                { number: 8, isBooked: false },
-                { number: 9, isBooked: false },
-                { number: 10, isBooked: false },
-                { number: 11, isBooked: false },
-                { number: 12, isBooked: false },
-                { number: 13, isBooked: false },
-                { number: 14, isBooked: false },
-                { number: 15, isBooked: false },
-            ]
-        },
-        {
-            row: "D",
-            column: [
-                { number: 1, isBooked: false },
-                { number: 2, isBooked: false },
-                { number: 3, isBooked: false },
-                { number: 4, isBooked: false },
-                { number: 5, isBooked: false },
-                { number: 6, isBooked: false },
-                { number: 7, isBooked: true },
-                { number: 8, isBooked: true },
-                { number: 9, isBooked: false },
-                { number: 10, isBooked: false },
-                { number: 11, isBooked: false },
-                { number: 12, isBooked: false },
-                { number: 13, isBooked: false },
-                { number: 14, isBooked: false },
-                { number: 15, isBooked: true },
-            ]
-        },
-        {
-            row: "E",
-            column: [
-                { number: 1, isBooked: false },
-                { number: 2, isBooked: true },
-                { number: 3, isBooked: false },
-                { number: 4, isBooked: true },
-                { number: 5, isBooked: false },
-                { number: 6, isBooked: false },
-                { number: 7, isBooked: true },
-                { number: 8, isBooked: true },
-                { number: 9, isBooked: false },
-                { number: 10, isBooked: true },
-                { number: 11, isBooked: false },
-                { number: 12, isBooked: false },
-                { number: 13, isBooked: true },
-                { number: 14, isBooked: true },
-                { number: 15, isBooked: true },
-            ]
-        },
-        {
-            row: "F",
-            column: [
-                { number: 1, isBooked: false },
-                { number: 2, isBooked: false },
-                { number: 3, isBooked: false },
-                { number: 4, isBooked: false },
-                { number: 5, isBooked: false },
-                { number: 6, isBooked: false },
-                { number: 7, isBooked: false },
-                { number: 8, isBooked: false },
-                { number: 9, isBooked: false },
-                { number: 10, isBooked: false },
-                { number: 11, isBooked: false },
-                { number: 12, isBooked: false },
-                { number: 13, isBooked: false },
-                { number: 14, isBooked: false },
-                { number: 15, isBooked: false },
-            ]
-        },
-        {
-            row: "G",
-            column: [
-                { number: 1, isBooked: false },
-                { number: 2, isBooked: false },
-                { number: 3, isBooked: false },
-                { number: 4, isBooked: false },
-                { number: 5, isBooked: false },
-                { number: 6, isBooked: false },
-                { number: 7, isBooked: false },
-                { number: 8, isBooked: false },
-                { number: 9, isBooked: false },
-                { number: 10, isBooked: false },
-                { number: 11, isBooked: false },
-                { number: 12, isBooked: false },
-                { number: 13, isBooked: true },
-                { number: 14, isBooked: true },
-                { number: 15, isBooked: true },
-            ]
-        },
+    SearchQuery1: [
+        { movie: "ponniyin selvan - part 2", link: "/movies/ponniyin-selvan-part-2" },
+        { movie: "ponmagal vandhal", link: "/movies/ponniyin-selvan-part-2" },
+        { movie: "annamalai", link: "/movies/ponniyin-selvan-part-2" },
+        { movie: "sembi", link: "/movies/ponniyin-selvan-part-2" },
+        { movie: "sachin", link: "/movies/ponniyin-selvan-part-2" },
+        { movie: "pathu thala", link: "/movies/ponniyin-selvan-part-2" },
+        { movie: "jilla", link: "/movies/ponniyin-selvan-part-2" },
+        { movie: "varisu", link: "/movies/ponniyin-selvan-part-2" },
+        { movie: "thunivu", link: "/movies/ponniyin-selvan-part-2" },
+        { movie: "ayothi", link: "/movies/ponniyin-selvan-part-2" },
     ],
+    SearchQuery: [
+        "Ponniyin Selvan - Part 2",
+        "Ponmagal Vandhal",
+        "Annamalai",
+        "Sembi",
+        "Sachin",
+        "Pathu Thalai",
+        "Jilla",
+        "Varisu",
+        "Thunivu",
+        "Ayothi"
+],
 };
 
 

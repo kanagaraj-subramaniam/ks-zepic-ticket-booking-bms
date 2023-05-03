@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Store from "../../stores/data";
 import { useParams } from "react-router-dom";
 import Availability from "../../components/theaters/availability.js";
@@ -9,6 +9,17 @@ import { NavLink } from "react-router-dom";
 
 function List(props) {
     const { language, type } = useParams();
+
+    const [priceFilters, setPriceFilters] = useState("All");
+    const [showFilters, setShowFilters] = useState("All");
+
+    const handlePriceFilter = (price) => {
+        setPriceFilters(price);
+    }
+
+    const handleShowFilter = (show) => {
+        setShowFilters(show);
+    }
     return (
         <div>
             {/* Theaters */}
@@ -17,10 +28,23 @@ function List(props) {
                 <Banner language={language} film={props.film} />
 
                 {/* Dates */}
-                <Dates list={Store.Data.TheaterDates} language={language} type={type} />
+                <Dates 
+                    list={Store.Data.TheaterDates} 
+                    language={language} 
+                    type={type} 
+                    setSelectedDate={props.setSelectedDate} 
+                    setPriceFilter={handlePriceFilter}
+                    setShowFilter={handleShowFilter} 
+                />
 
                 {/* Availability */}
-                <Availability list={Store.Data.Theaters} setSteps={props.setSteps} />
+                <Availability 
+                    list={Store.Data.Theaters} 
+                    selectedDate={props.selectedDate} 
+                    setSteps={props.setSteps} 
+                    priceFilter={priceFilters}
+                    showFilter={showFilters}
+                />
 
                 {/* Breadcrumbs */}
                 <section className="Breadcrumbs Mtm25">

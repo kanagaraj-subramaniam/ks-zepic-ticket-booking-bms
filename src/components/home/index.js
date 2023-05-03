@@ -10,6 +10,7 @@ import CarouselSlide from "../carousel";
 import { NavLink } from "react-router-dom";
 
 function Home() {
+
     return (
         <div>
             {/* Navigation */}

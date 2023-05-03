@@ -12,6 +12,7 @@ import Logo from "../../assets/images/mini-logo.png";
 import { NavLink } from "react-router-dom";
 
 function Movies() {
+    
     const [showFormat, setShowFormat] = useState(false);
     const [isBookingVisible, setIsBookingVisible] = useState(false);
 

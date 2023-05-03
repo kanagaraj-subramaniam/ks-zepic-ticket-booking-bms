@@ -32,7 +32,7 @@ function Card(props) {
                                 {props.list.map((item, i) => {
                                     return (
                                         <div className="Item" key={i}>
-                                            <a href={item.link}>
+                                            <NavLink to={item.link}>
                                                 <img src={item.asset} alt={item.name} />
                                                 {!props.onlyBanner &&
                                                     <>
@@ -40,7 +40,7 @@ function Card(props) {
                                                         <div className="Type" style={{color: props.darkMode && "#FFFFFF"}}>{item.type}</div>
                                                     </>
                                                 }
-                                            </a>
+                                            </NavLink>
                                         </div>
                                     );
                                 })

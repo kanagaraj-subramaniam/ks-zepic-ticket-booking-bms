@@ -6,8 +6,12 @@ import List from "../../components/theaters/list.js";
 import TermsModal from "./termsModal";
 import SeatsModal from "./seatsModal";
 import LayoutsModal from "./layoutsModal";
+import { useSelector } from "react-redux";
 
 function Theaters() {
+
+    const state = useSelector((state) => state);
+    
     const [view, setView] = useState("List");
     const [film, setFilm] = useState("Ponniyin Selvan - Part 2");
     const [step, setStep] = useState(0);
@@ -17,6 +21,7 @@ function Theaters() {
     const [theater, setTheater] = useState("");
     const [time, setTime] = useState("");
     const [selectedSeats, setSelectedSeats] = useState(2);
+    const [selectDate, setSelectDate] = useState("01 MAY 2023");
 
     const resetStep = () => {
         setStep(0);
@@ -61,6 +66,20 @@ function Theaters() {
         setSteps(step);
     }
 
+    const setSelectedDate = (date) => {
+        setSelectDate(date);
+    }
+
+    const handleTheaterLayout = (date, time, theater) => {
+        var layout = state.theaterLayout.filter(function (el) {
+            return el.date === date &&
+                   el.time === time &&
+                   el.theater === theater;
+          });
+      
+        return layout; 
+    }
+
     const disableScroll = () => {
         document.body.style.overflow = 'hidden';
     }
@@ -75,7 +94,7 @@ function Theaters() {
             <Navigation />
 
             {/* List */}
-            {view === "List" && <List film={film} setSteps={setStepsData} />}
+            {view === "List" && <List film={film} setSteps={setStepsData} setSelectedDate={setSelectedDate} selectedDate={selectDate} />}
 
             {/* Terms Modal */}
             {step === 1 && <TermsModal handleClose={resetStep} setStepsFromTerm={setStepsFromTerm} />}
@@ -102,9 +121,10 @@ function Theaters() {
                     time={time}
                     selectedSeats={selectedSeats}
                     setStepsFromLayout={setStepsFromLayout}
-                    layout={Store.Data.TheaterLayout}
+                    layout={handleTheaterLayout(selectDate, time, theater)}
                     ticketClass={ticketClass}
                     ticketCost={ticketCost}
+                    date={selectDate}
                 />
             }
 

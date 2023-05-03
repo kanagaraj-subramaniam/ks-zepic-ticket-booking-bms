@@ -9,8 +9,12 @@ import Banner1 from "../../assets/images/banner1.png";
 import Banner2 from "../../assets/images/banner2.png";
 import Banner3 from "../../assets/images/banner3.png";
 import { NavLink } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { updateLayout } from "../../redux/actions";
 
 function LayoutsModal(props) {
+    const dispatch = useDispatch();
+
     const [seats, setSeats] = useState([]);
     const [payment, setPayment] = useState(false);
 
@@ -33,10 +37,9 @@ function LayoutsModal(props) {
         return seats.includes(seat);
     }
 
-    const handlePaymentClick = () => {
-        let newURL = window.location.origin + "/booking/success";
-        window.location.href = newURL;
-
+    const handleStateSeatSelect = () => {
+        dispatch(updateLayout(props.time, props.date, props.theater, seats));
+        props.handleClose();
     }
 
     return (
@@ -52,7 +55,7 @@ function LayoutsModal(props) {
                             <span>U</span>
                         </NavLink>
                         <div>
-                            {props.theater} | Today, 02 May, {props.time}
+                            {props.theater} | {props.date}, {props.time}
                         </div>
                         <div className="Seat-Select" style={{ display: payment && "none" }} onClick={() => props.setStepsFromLayout(2)}>
                             {props.selectedSeats} Ticket(s)
@@ -79,19 +82,26 @@ function LayoutsModal(props) {
                                 <div className="Seat-Selection">
                                     {props.layout.map((lay, l) => {
                                         return (
+
                                             <div key={l}>
-                                                <div className="Seat-Row">{lay.row}</div>
-                                                {lay.column.map((col, c) => {
+                                                {lay.seats.map((seat, s) => {
                                                     return (
-                                                        <button onClick={() => seatSelect(lay.row, col.number, col.isBooked)} className={`Seat-Column ${col.isBooked ? "Booked" : ""} ${isAvailableInSeats(lay.row.concat(col.number).toString()) ? "Active" : ""}`} key={c}>
-                                                            {col.number}
-                                                        </button>
+
+                                                        <div key={s}>
+                                                            <div className="Seat-Row">{seat.row}</div>
+                                                            {seat.column.map((col, c) => {
+                                                                return (
+                                                                    <button onClick={() => seatSelect(seat.row, col.number, col.isBooked)} className={`Seat-Column ${col.isBooked ? "Booked" : ""} ${isAvailableInSeats(seat.row.concat(col.number).toString()) ? "Active" : ""}`} key={c}>
+                                                                        {col.number}
+                                                                    </button>
+                                                                );
+                                                            })}
+                                                        </div>
                                                     );
                                                 })}
                                             </div>
                                         );
                                     })}
-
                                     <img src={Screen} alt="Screen" className="Screen" />
                                     <div className="Screen-Info">All eyes this way please!</div>
                                 </div>
@@ -211,16 +221,18 @@ function LayoutsModal(props) {
                                             By proceeding, I express my consent to complete this transaction.
                                         </div>
 
-                                        <div className="Act" onClick={() => handlePaymentClick()}>
-                                            <div className="Info">
-                                                <span className="Fl">
-                                                    TOTAL: Rs. {(props.selectedSeats * props.ticketCost) + (props.selectedSeats * 30)}
-                                                </span>
-                                                <span className="Fr">
-                                                    Proceed
-                                                </span>
+                                        <NavLink to={window.location.origin + "/booking/success"} onClick={() => handleStateSeatSelect()}>
+                                            <div className="Act">
+                                                <div className="Info">
+                                                    <span className="Fl">
+                                                        TOTAL: Rs. {(props.selectedSeats * props.ticketCost) + (props.selectedSeats * 30)}
+                                                    </span>
+                                                    <span className="Fr">
+                                                        Proceed
+                                                    </span>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </NavLink>
                                     </div>
 
                                 </div>

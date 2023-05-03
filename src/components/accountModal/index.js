@@ -6,15 +6,20 @@ import CloseGray from "../../assets/images/close-gray.svg";
 import Flag from "../../assets/images/indianflag.svg";
 import Back from "../../assets/images/goback.svg";
 import { NavLink } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { signIn } from "../../redux/actions";
 
 function AccountModal(props) {
+    const dispatch = useDispatch();
+
     const [otpBlockVisible, setOtpBlockVisible] = useState(false);
     const [showTerms, setShowTerms] = useState(true);
     const [showActBtn, setShowActBtn] = useState(false);
     const [userNum, setUserNum] = useState("");
 
     const handleChange = (e) => {
-        setUserNum(e.target.value);
+            setUserNum(e.target.value);
+        
         if (userNum.length >= 0) {
             setShowTerms(false);
             setShowActBtn(true);
@@ -43,6 +48,7 @@ function AccountModal(props) {
 
     const handleClose = () => {
         handleRefresh();
+        dispatch(signIn(userNum));
         props.close();
     }
 
@@ -82,7 +88,8 @@ function AccountModal(props) {
                                 className="Num"
                                 value={userNum}
                                 onChange={handleChange}
-                                placeholder="Continue with mobile number" />
+                                placeholder="Continue with mobile number"
+                             />
                         </div>
 
                         <div className="Terms" style={{ display: !showTerms && "none" }}>
@@ -99,12 +106,12 @@ function AccountModal(props) {
                         <h3> Verify your Mobile Number </h3>
                         <h6> Enter OTP sent to <span>+91 {userNum}</span></h6>
                         <div>
-                            <input type="number" className="Chk" />
-                            <input type="number" className="Chk" />
-                            <input type="number" className="Chk" />
-                            <input type="number" className="Chk" />
-                            <input type="number" className="Chk" />
-                            <input type="number" className="Chk" />
+                            <input type="tel" className="Chk" maxLength={'1'} />
+                            <input type="tel" className="Chk" maxLength={'1'} />
+                            <input type="tel" className="Chk" maxLength={'1'} />
+                            <input type="tel" className="Chk" maxLength={'1'} />
+                            <input type="tel" className="Chk" maxLength={'1'} />
+                            <input type="tel" className="Chk" maxLength={'1'} />
                         </div>
                         <button className="Btn-Act Mt2" onClick={handleClose}>Continue</button>
                     </div>

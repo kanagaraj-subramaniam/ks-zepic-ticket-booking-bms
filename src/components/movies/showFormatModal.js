@@ -1,5 +1,6 @@
 import React from "react";
 import CloseGray from "../../assets/images/close-gray.svg";
+import { NavLink } from "react-router-dom";
 
 function ShowFormatModal(props) {
     return (
@@ -23,9 +24,11 @@ function ShowFormatModal(props) {
                                 </div>
                                 {item.format.map((format, f) => {
                                     return (
-                                        <div className="Tags" key={f} onClick={() => props.handleTheaterRedirect(item.language, format.type)}>
-                                            {format.type}
-                                        </div>
+                                        <NavLink key={f} to={window.location + '/' + item.language.toLowerCase() + '/' + format.type.toLowerCase()} onClick={()=>props.close()}>
+                                            <div className="Tags">
+                                                {format.type}
+                                            </div>
+                                        </NavLink>
                                     );
                                 })}
                             </div>

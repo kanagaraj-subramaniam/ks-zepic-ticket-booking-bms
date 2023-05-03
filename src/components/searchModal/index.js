@@ -1,18 +1,79 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Close from "../../assets/images/closeblack.svg";
 import Arrow from "../../assets/images/arrowblack.svg";
 import { Container } from "react-bootstrap";
 import Heart from "../../assets/images/heart.svg";
 import { NavLink } from "react-router-dom";
+import Store from "../../stores/data";
 
 function SearchModal(props) {
+    const [txt, setTxt] = useState("");
+    const [result, setResult] = useState(false);
+    const [resultArray, setResultArray] = useState([]);
+
+    useEffect(() => {
+        handleOnTxtChange();
+    }, [txt]);
+
+    const handleOnChange = (e) => {
+        setTxt(e.target.value);
+    }
+
+    const handleOnTxtChange = () => {
+        if (txt.length > 0) {
+            let array = Store.Data.SearchQuery1;
+            const filteredArray = array.filter(
+                (arr) => arr.movie.includes(txt.toLowerCase())
+            );
+
+            if (filteredArray.length === 0) {
+                setResultArray([{ movie: "No Data Found", link: "#" }]);
+            }
+            else {
+                setResultArray(filteredArray);
+            }
+            setResult(true);
+        }
+        else {
+            setResult(false);
+            setResultArray([]);
+        }
+    }
+
+    const handleClose = () => {
+        setTxt("");
+        setResult(false);
+        setResultArray([]);
+        props.close();
+    }
+
     return (
         <div className="Modal" style={{ display: props.visible ? "block" : "none" }}>
             <div className="Search">
                 <div className="Input">
-                    <input type="text" placeholder="Search for Movies, Events, Plays, Sports and Activities" />
-                    <img src={Arrow} alt="Arrow" className="Arrow" onClick={() => props.close()} />
-                    <img src={Close} alt="Close" className="Close" onClick={() => props.close()} />
+                    <div className="Cnt">
+                        <input type="text" value={txt} onChange={(e) => handleOnChange(e)} placeholder="Search for Movies, Events, Plays, Sports and Activities" />
+                        <div className="Rslt" style={{ display: result ? "block" : "none" }}>
+                            {resultArray.map((result, r) => {
+                                return (
+                                    <div key={r} className={result.movie === "No Data Found" ? "Nf" : ""}>
+
+                                        {result.movie === "No Data Found"
+                                            ?
+                                            "No data found :("
+                                            :
+                                            <NavLink key={r} to={result.link}>
+                                                {result.movie}
+                                            </NavLink>
+
+                                        }
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                    <img src={Arrow} alt="Arrow" className="Arrow" onClick={() => handleClose()} />
+                    <img src={Close} alt="Close" className="Close" onClick={() => handleClose()} />
                 </div>
                 <div className="Content">
                     <Container>
